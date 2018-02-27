@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Дарья Зайцева](https://up.htmlacademy.ru/htmlcss/20/user/644345).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
