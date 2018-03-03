@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header" id="page-header">
+    <div class="wrapper">
+      <a href="index.html" class="logo__link">
+        <img src="img/logo.png" class="logo" width="150" height="150" alt="Логотип Nerds">
+      </a>
+      <nav class="main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item">Студия</li>
+          <li class="main-menu__item">Клиенты</li>
+          <li class="main-menu__item">Магазин</li>
+          <li class="main-menu__item">Контакты</li>
+          <li class="main-menu__item main-menu__item-cart">
+            <a href="#" class="main-menu__link-cart">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+    </div>
+  </header>
+  <main class="page-main" id="page-main">
+    <div class="wrapper">
+      <section class="filter">
+        <form action="/echo" method="post" oninput="priceoutput_low.value=range_low.value, priceoutput_high.value=range_high.value">
+          <strong class="subtitle">Стоимость</strong>
+          <div class="filter__range">
+            <input type="range" value="0" min="0" max="15000" step="500" name="range" id="range_low" class="filter__input-range">
+            <input type="range" value="13000" min="0" max="15000" step="500" name="range" id="range_high" class="filter__input-range">
+            <p class="range__amount">
+              <label for="range_low" class="range__output">от
+                <output name="priceoutput_low"></output>
+              </label>
+              <label for="range_high" class="range__output">до
+                <output name="priceoutput_high"></output>
+              </label>
+            </p>
+          </div>
+          <div class="filter__radio">
+            <strong class="subtitle">Сетка</strong>
+            <input type="radio" name="radio" id="radio-1" class="filter__input-radio">
+            <label for="radio-1">Адаптивная</label>
+            <input type="radio" name="radio" id="radio-2" class="filter__input-radio">
+            <label for="radio-2">Фиксированная</label>
+            <input type="radio" name="radio" id="radio-3" class="filter__input-radio">
+            <label for="radio-3">Резиновая</label>
+          </div>
+          <div class="filter__checkbox">
+            <strong class="subtitle">Особенности</strong>
+            <input type="checkbox" name="checkbox" id="checkbox-1" class="filter__input-checkbox">
+            <label for="checkbox-1">Слайдер</label>
+            <input type="checkbox" name="checkbox" id="checkbox-2" class="filter__input-checkbox">
+            <label for="checkbox-2">Блок преимуществ</label>
+            <input type="checkbox" name="checkbox" id="checkbox-3" class="filter__input-checkbox">
+            <label for="checkbox-3">Новости</label>
+            <input type="checkbox" name="checkbox" id="checkbox-4" class="filter__input-checkbox">
+            <label for="checkbox-4">Гелерея</label>
+            <input type="checkbox" name="checkbox" id="checkbox-5" class="filter__input-checkbox">
+            <label for="checkbox-5">Корзина</label>
+          </div>
+          <button type="submit" class="btn btn-gray">Показать</button>
+        </form>
+      </section>
+      <section class="catalog">
+        <div class="sorting">
+          <strong class="subtitle">Сортировать:</strong>
+          <ul class="sorting__list">
+            <li class="sorting__item">
+              <a href="#" class="sorting__link">По цене</a>
+            </li>
+            <li class="sorting__item">
+              <a href="#" class="sorting__link">По типу</a>
+            </li>
+            <li class="sorting__item">
+              <a href="#" class="sorting__link">По названию</a>
+            </li>
+            <li class="sorting__item sorting__item-arrowup">
+              <a href="#" class="sorting__link"></a>
+            </li>
+            <li class="sorting__item sorting__item-arrowdown">
+              <a href="#" class="sorting__link"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog__item-box">
+          <article class="catalog__item">
+            <img src="img/catalog_item-1.png" width="300" height="500" alt="Образец продукта" class="catalog__item-img">
+            <div class="catalog__item-info">
+              <!-- Hover !-->
+              <a href="#" class="catalog__item-link">Sedona</a>
+              <p class="catalog__item-text">Информационный сайт <br> для туристов</p>
+              <a href="#" class="btn btn__red"> 9 900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog__item">
+            <img src="img/catalog_item-2.png" width="300" height="500" alt="Образец продукта" class="catalog__item-img">
+            <div class="catalog__item-info">
+              <!-- Hover !-->
+              <a href="#" class="catalog__item-link">Pink app</a>
+              <p class="catalog__item-text">Продуктовый лендинг <br> приложений для iOS и Android</p>
+              <a href="#" class="btn btn__red"> 9 900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog__item">
+            <img src="img/catalog_item-3.png" width="300" height="500" alt="Образец продукта" class="catalog__item-img">
+            <div class="catalog__item-info">
+              <!-- Hover !-->
+              <a href="#" class="catalog__item-link">Brabershop</a>
+              <p class="catalog__item-text">Сайт салоны красоты.<br> Для мужчин, да.</p>
+              <a href="#" class="btn btn__red"> 9 900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog__item">
+            <img src="img/catalog_item-4.png" width="300" height="500" alt="Образец продукта" class="catalog__item-img">
+            <div class="catalog__item-info">
+              <!-- Hover !-->
+              <a href="#" class="catalog__item-link">Mishka</a>
+              <p class="catalog__item-text">Интернет магазин <br> вязаных игрушек</p>
+              <a href="#" class="btn btn__red"> 9 900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog__item">
+            <img src="img/catalog_item-5.png" width="300" height="500" alt="Образец продукта" class="catalog__item-img">
+            <div class="catalog__item-info">
+              <!-- Hover !-->
+              <a href="#" class="catalog__item-link">A plus</a>
+              <p class="catalog__item-text">Лендинг курсов повышения <br> квалификации</p>
+              <a href="#" class="btn btn__red"> 9 900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog__item">
+            <img src="img/catalog_item-6.png" width="300" height="500" alt="Образец продукта" class="catalog__item-img">
+            <div class="catalog__item-info">
+              <!-- Hover !-->
+              <a href="#" class="catalog__item-link">Кваст</a>
+              <p class="catalog__item-text">Промо-сайт производителя <br> крафтового кваса</p>
+              <a href="#" class="btn btn__red"> 9 900 руб.</a>
+            </div>
+          </article>
+          <div class="page-switcher">
+            <a href="#" class="page-switcher__small">1</a>
+            <a href="#" class="page-switcher__small">2</a>
+            <a href="#" class="page-switcher__small">3</a>
+            <a href="#" class="page-switcher__big">Следующая</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <section class="coordinates" id="coordinates">
+    <div class="feedback">
+      <strong class="subtitle">Nёrds Design Studio</strong>
+      <p class="text-decoration">191186, Санкт-Петербург,<br> ул. Б.Конюшенная, д. 19/8</p>
+      <p class="text-decoration">тел. +7(812) 275-75-75</p>
+      <a href="#feedback__contact-us" class="btn btn__red">Напишите нам</a>
+    </div>
+    <div class="feedback__contact-us" id="feedback__contact-us">
+      <!-- Hidden !-->
+      <div class="wrapper">
+        <strong class="feedback__subtitle">Напишите нам</strong>
+        <form action="#" method="post" class="feedback__form">
+          <input type="button" class="close_window" id="btn_close">
+          <div class="feedback__section">
+            <label for="contact_name" class="feedback__label">Ваше имя:</label>
+            <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" required>
+          </div>
+          <div class="feedback__section">
+            <label for="contact_name" class="feedback__label">Ваше имя:</label>
+            <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com"
+              required>
+          </div>
+          <div class="feedback__section">
+            <label for="contact_msg" class="feedback__label feedback__label-textarea">Текст письма: </label>
+            <textarea class="input__textarea" rows="3" cols="50" name="contact_msg" id="contact_msg" placeholder="В свободной форме"
+              required>
+            </textarea>
+          </div>
+          <div class="feedback__section">
+            <button class="btn btn__red" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="page-footer" id="page-footer">
+    <div class="wrapper">
+      <div class="social-network">
+        <ul class="social-network__list">
+          <li class="social-network__item">
+            <a href="https://vk.com" target="_blank" class="social-network__link social-network__sprite social-network__sprite-vk"></a>
+          </li>
+          <li class="social-network__item">
+            <a href="https://facebook.com" target="_blank" class="social-network__link social-network__sprite social-network__sprite-fb"></a>
+          </li>
+          <li class="social-network__item">
+            <a href="https://instagram.com" target="_blank" class="social-network__link social-network__sprite social-network__sprite-inst"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="social-network__call">
+        <h4 class="social-network__call-caption">Давайте дружить, это выгодно!</h4>
+        <p class="text-decoration">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+
