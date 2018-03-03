@@ -36,11 +36,11 @@
             <input type="range" value="0" min="0" max="15000" step="500" name="range" id="range_low" class="filter__input-range">
             <input type="range" value="13000" min="0" max="15000" step="500" name="range" id="range_high" class="filter__input-range">
             <p class="range__amount">
-              <label for="range_low" class="range__output">от
-                <output name="priceoutput_low"></output>
+              <label for="range_low_output" class="range__output">от
+                <output name="priceoutput_low" id="range_low_output"></output>
               </label>
-              <label for="range_high" class="range__output">до
-                <output name="priceoutput_high"></output>
+              <label for="range_high_output" class="range__output">до
+                <output name="priceoutput_high" id="range_high_output"></output>
               </label>
             </p>
           </div>
@@ -167,7 +167,7 @@
       <div class="wrapper">
         <strong class="feedback__subtitle">Напишите нам</strong>
         <form action="#" method="post" class="feedback__form">
-          <input type="button" class="close_window" id="btn_close">
+          <input type="button" class="close_window" value="close" id="btn_close">
           <div class="feedback__section">
             <label for="contact_name" class="feedback__label">Ваше имя:</label>
             <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" required>
