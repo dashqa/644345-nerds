@@ -60,6 +60,7 @@
   </header>
   <main class="page-main" id="page-main">
     <section class="product__list" id="product__list">
+      <h2 class="visually-hidden">Список продуктов</h2>
       <div class="wrapper">
         <div class="product__item">
           <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
@@ -85,10 +86,11 @@
       </div>
     </section>
     <section class="about-us" id="about-us">
+      <h2 class="visually-hidden">Информация о нас</h2>
       <div class="wrapper">
         <div class="about-us__info">
-          <h2 class="about-us__info-caption">Мы - маленькая, но гордая
-            <br> дизайн-студия из Краснодара.</h2>
+          <strong class="about-us__info-caption">Мы - маленькая, но гордая
+            <br> дизайн-студия из Краснодара.</strong>
           <p class="text-decoration">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
             <br> превыше креатива. Работаем непокладаю рук, как роботы.</p>
           <strong class="subtitle">Выполняем заказы на разработку:</strong>
@@ -126,44 +128,53 @@
       </div>
     </section>
     <section class="partners" id="partners">
+      <h2 class="visually-hidden">Список партнеров</h2>
       <div class="wrapper">
         <ul class="partners__list">
           <li class="partners__item">
-            <img src="img/logo-1.png" width="199" height="68" alt="HtmlAcademy">
+            <a href="#" class="partners__link">
+              <img src="img/logo-1.png" width="199" height="68" alt="HtmlAcademy">
+            </a>
           </li>
           <li class="partners__item">
-            <img src="img/logo-2.png" width="209" height="90" alt="Borodinski">
+            <a href="#" class="partners__link">
+              <img src="img/logo-2.png" width="209" height="90" alt="Borodinski">
+            </a>
           </li>
           <li class="partners__item">
-            <img src="img/logo-3.png" width="185" height="52" alt="Pink">
+            <a href="#" class="partners__link">
+              <img src="img/logo-3.png" width="185" height="52" alt="Pink">
+            </a>
           </li>
           <li class="partners__item">
-            <img src="img/logo-4.png" width="173" height="84" alt="Mishka">
+            <a href="#" class="partners__link">
+              <img src="img/logo-4.png" width="173" height="84" alt="Mishka">
+            </a>
           </li>
         </ul>
       </div>
     </section>
   </main>
   <section class="coordinates" id="coordinates">
+    <h2 class="visually-hidden">Контактные данные</h2>
     <div class="feedback">
       <strong class="subtitle">Nёrds Design Studio</strong>
       <p class="text-decoration">191186, Санкт-Петербург,
         <br> ул. Б.Конюшенная, д. 19/8</p>
       <p class="text-decoration">тел. +7(812) 275-75-75</p>
-      <a href="#feedback__contact-us" class="btn btn__red">Напишите нам</a>
+      <button type="button" class="btn btn__red btn__feedback">Напишите нам</button>
     </div>
     <div class="feedback__contact-us" id="feedback__contact-us">
       <!-- Hidden !-->
       <div class="wrapper">
         <strong class="feedback__subtitle">Напишите нам</strong>
         <form action="#" method="post" class="feedback__form">
-          <input type="button" class="close_window" value="close" id="btn_close">
           <div class="feedback__section">
             <label for="contact_name" class="feedback__label">Ваше имя:</label>
-            <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" required>
+            <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" required autofocus>
           </div>
           <div class="feedback__section">
-            <label for="contact_name" class="feedback__label">Ваше имя:</label>
+            <label for="contact_email" class="feedback__label">Ваш e-mail:</label>
             <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com"
               required>
           </div>
@@ -177,6 +188,7 @@
             <button class="btn btn__red" type="submit">Отправить</button>
           </div>
         </form>
+        <button type="button" class="close_window" id="btn_close">Закрыть</button>
       </div>
     </div>
   </section>
@@ -202,7 +214,7 @@
         </ul>
       </div>
       <div class="social-network__call">
-        <h4 class="social-network__call-caption">Давайте дружить, это выгодно!</h4>
+        <strong class="social-network__call-caption">Давайте дружить, это выгодно!</strong>
         <p class="text-decoration">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
@@ -210,5 +222,4 @@
 </body>
 
 </html>
-
 
