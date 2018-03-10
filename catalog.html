@@ -41,17 +41,17 @@
     <div class="wrapper">
       <section class="filter">
         <h3 class="visually-hidden">Фильтр по товарам</h3>
-        <form action="/echo" method="get" oninput="priceoutput_low.value=range_low.value, priceoutput_high.value=range_high.value">
+        <form action="/echo" method="get" class="filter__form">
           <strong class="subtitle">Стоимость</strong>
           <div class="filter__range">
-            <input type="range" value="0" min="0" max="15000" step="500" name="range" id="range_low" class="filter__input-range">
-            <input type="range" value="13000" min="0" max="15000" step="500" name="range" id="range_high" class="filter__input-range">
+            <div class="range range-low"></div>
+            <div class="range range-high"></div>
             <p class="range__amount">
-              <label for="range_low" class="range__output">от
-                <output name="priceoutput_low" id="range_low_output"></output>
+              <label for="low-price" class="range__low">от
+                <input name="low-price" type="text" value="0">
               </label>
-              <label for="range_high" class="range__output">до
-                <output name="priceoutput_high" id="range_high_output"></output>
+              <label for="high-price" class="range__high">до
+                <input name="high-price" type="text" value="15000">
               </label>
             </p>
           </div>
