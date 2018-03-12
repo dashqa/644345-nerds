@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -192,33 +193,6 @@
       <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       <img src="img/map-marker.png" width="367" height="190" alt="дом 19/8">
     </div>
-    <div class="feedback__popup" id="feedback__popup">
-      <!-- Hidden !-->
-      <div class="wrapper">
-        <strong class="feedback__subtitle">Напишите нам</strong>
-        <form action="#" method="post" class="feedback__form">
-          <div class="feedback__section">
-            <label for="contact_name" class="feedback__label">Ваше имя:</label>
-            <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" required autofocus>
-          </div>
-          <div class="feedback__section">
-            <label for="contact_email" class="feedback__label">Ваш e-mail:</label>
-            <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com"
-              required>
-          </div>
-          <div class="feedback__section">
-            <label for="contact_msg" class="feedback__label feedback__label-textarea">Текст письма: </label>
-            <textarea class="input__textarea" rows="3" cols="50" name="contact_msg" id="contact_msg" placeholder="В свободной форме"
-              required>
-            </textarea>
-          </div>
-          <div class="feedback__section">
-            <button class="btn btn__red" type="submit">Отправить</button>
-          </div>
-        </form>
-        <button type="button" class="close_window" id="btn_close">Закрыть</button>
-      </div>
-    </div>
   </section>
   <footer class="page-footer" id="page-footer">
     <div class="wrapper">
@@ -247,6 +221,33 @@
       </div>
     </div>
   </footer>
+  <section class="feedback__popup" id="feedback__popup">
+      <!-- Hidden !-->
+      <div class="wrapper">
+        <strong class="feedback__subtitle">Напишите нам</strong>
+        <form action="#" method="post" class="feedback__form">
+          <div class="feedback__section">
+            <label for="contact_name" class="feedback__label">Ваше имя:</label>
+            <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" required autofocus>
+          </div>
+          <div class="feedback__section">
+            <label for="contact_email" class="feedback__label">Ваш e-mail:</label>
+            <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com"
+              required>
+          </div>
+          <div class="feedback__section">
+            <label for="contact_msg" class="feedback__label feedback__label-textarea">Текст письма: </label>
+            <textarea class="input__textarea" rows="3" cols="50" name="contact_msg" id="contact_msg" placeholder="В свободной форме"
+              required>
+            </textarea>
+          </div>
+          <div class="feedback__section">
+            <button class="btn btn__red" type="submit">Отправить</button>
+          </div>
+        </form>
+        <button type="button" class="close_window" id="btn_close">Закрыть</button>
+      </div>
+    </section>
 </body>
 
 </html>
