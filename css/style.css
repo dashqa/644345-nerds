@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -13,6 +23,21 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-header {
   background-color: #eeeeee;
 }
@@ -25,12 +50,20 @@ a {
 
 .main-menu__list,
 .projects__list,
-.social-network__list {
+.social-network__list,
+.filter__radio-list,
+.filter__checkbox-list,
+.sorting__list {
   list-style: none;
 }
 
+.main-menu__item-cart::before {
+  background-image: url("/img/cart-icon.svg");
+  background-repeat: no-repeat;
+}
+
 .main-menu__link {
-  color:#000000;
+  color: #000000;
 }
 
 .main-menu__link:hover,
@@ -42,7 +75,17 @@ a {
   color: #a6a6a6;
 }
 
-.slider__slides-info-caption {
+.main__logo:hover,
+.main__logo:focus {
+  opacity: 0.8;
+}
+
+.main__logo:active {
+  opacity: 0.3;
+}
+
+.slider__slides-info-caption,
+.page-title {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -52,6 +95,7 @@ a {
 .btn {
   text-align: center;
   font: inherit;
+  font-weight: 500;
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
@@ -62,12 +106,62 @@ a {
   background-color: #fb565a;
 }
 
+.btn__red:hover,
+.btn__red:focus {
+  background-color: #e74246;
+}
+
+.btn__red:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 1px 1px 10px -1px;
+}
+
 .btn__green {
   background-color: #00ca74;
 }
 
+.btn__green:hover,
+.btn__green:focus {
+  background-color: #00bc6c;
+}
+
+.btn__green:active {
+  background-color: #00aa62;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 1px 1px 10px -1px;
+}
+
 .btn__yellow {
   background-color: #efc84a;
+}
+
+.btn__yellow:hover,
+.btn__yellow:focus {
+  background-color: #eab534;
+}
+
+.btn__yellow:active {
+  background-color: #e5a722;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 1px 1px 10px -1px;
+}
+
+.btn__gray {
+  font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.btn__gray:hover,
+.btn__gray:focus {
+  background-color: #dfdfdf;
+}
+
+.btn__gray:active {
+  background-color: #d5d5d5;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 1px 1px 10px -1px;
 }
 
 .product__caption {
@@ -76,6 +170,19 @@ a {
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.projects__logo {
+  opacity: 0.2;
+}
+
+.projects__logo:hover,
+.projects__logo:focus {
+  opacity: 1;
+}
+
+.projects__logo:active {
+  opacity: 0.1;
 }
 
 .about-us__info-caption,
@@ -87,32 +194,86 @@ a {
   color: #000000;
 }
 
-.subtitle {
+.about-us__info-subtitle,
+.about-us__statistic-subtitle {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+}
+
+.coordinates__subtitle,
+.catalog__item-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sorting__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sorting__link {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(000, 000, 000, 0.3);
+  text-transform: uppercase;
+}
+
+.sorting__link:hover,
+.sorting__link:focus {
+  color: rgba(000, 000, 000, 0.6);
+}
+
+.sorting__link:active {
+  color: #000000;
 }
 
 .span-decoration {
   line-height: 18px;
 }
 
-.coordinates__subtitle {
+.filter__subtitle {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter__radio-item,
+.filter__checkbox-item {
+  line-height: 20px;
+}
+
+.filter__radio,
+.filter__checkbox {
+  border: none;
 }
 
 .about-us__statistics-text-decoration {
   font-size: 45px;
 }
 
-.coordinates__info {
+.page-switcher {
+  font-weight: 500;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.coordinates__info,
+.catalog__item-text {
   line-height: 18px;
   color: #666666;
 }
 
-.social-network__call-caption{
+.social-network__call-caption {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
@@ -127,4 +288,9 @@ a {
 .feedback__label {
   font-weight: 700;
   line-height: 18px;
+}
+
+.feedback__popup,
+.catalog__item-info {
+  display: none;
 }

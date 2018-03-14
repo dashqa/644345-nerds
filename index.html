@@ -12,7 +12,7 @@
 <body>
   <header class="page-header" id="page-header">
     <div class="wrapper">
-      <img src="img/nerds-logo.svg" class="logo" width="160" height="65" alt="Логотип Nerds">
+      <img src="img/nerds-logo.svg" class="main__logo" width="160" height="65" alt="Логотип Nerds">
       <nav class="main-menu">
         <ul class="main-menu__list">
           <li class="main-menu__item">
@@ -50,7 +50,7 @@
                     <br> скрупулезно.</h2>
                   <p class="text-decoration">Математически выверенный дизайн
                     <br> для вашего сайта или мобильного приложения</p>
-                  <a href="#" class="btn btn__red">Узнать больше</a>
+                  <a href="#" class="btn btn__red btn__big">Узнать больше</a>
                 </div>
                 <figure class="slider__slides-img">
                   <img src="img/slide1.png" width="760" height="431" alt="Математически выверенный дизайн для вашего сайта или мобильного приложения">
@@ -121,7 +121,7 @@
             <br> дизайн-студия из Краснодара.</strong>
           <p class="text-decoration">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
             <br> превыше креатива. Работаем непокладаю рук, как роботы.</p>
-          <strong class="subtitle">Выполняем заказы на разработку:</strong>
+          <strong class="about-us__info-subtitle">Выполняем заказы на разработку:</strong>
           <ul class="about-us__info-list">
             <li class="about-us__info-item">Веб-сайтов любой сложности</li>
             <li class="about-us__info-item">Мобильных приложений для iOS и Android</li>
@@ -130,7 +130,7 @@
         </div>
         <div class="about-us__statistic">
           <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип Nerds">
-          <strong class="subtitle">C 2014 года любим точность во всем:</strong>
+          <strong class="about-us__statistic-subtitle">C 2014 года любим точность во всем:</strong>
         </div>
         <div class="about-us__statistic-item">
           <p class="text-decoration about-us__statistics-text-decoration">146
@@ -161,22 +161,22 @@
         <ul class="projects__list">
           <li class="projects__item">
             <a href="#" class="projects__link">
-              <img src="img/logo-1.png" width="199" height="68" alt="HtmlAcademy">
+              <img src="img/logo-1.png" width="199" height="68" alt="HtmlAcademy" class="projects__logo">
             </a>
           </li>
           <li class="projects__item">
             <a href="#" class="projects__link">
-              <img src="img/logo-2.png" width="209" height="90" alt="Borodinski">
+              <img src="img/logo-2.png" width="209" height="90" alt="Borodinski" class="projects__logo">
             </a>
           </li>
           <li class="projects__item">
             <a href="#" class="projects__link">
-              <img src="img/logo-3.png" width="185" height="52" alt="Pink">
+              <img src="img/logo-3.png" width="185" height="52" alt="Pink" class="projects__logo">
             </a>
           </li>
           <li class="projects__item">
             <a href="#" class="projects__link">
-              <img src="img/logo-4.png" width="173" height="84" alt="Mishka">
+              <img src="img/logo-4.png" width="173" height="84" alt="Mishka" class="projects__logo">
             </a>
           </li>
         </ul>
@@ -186,7 +186,7 @@
   <section class="coordinates" id="coordinates">
     <h2 class="visually-hidden">Контактные данные</h2>
     <div class="feedback">
-      <strong class="subtitle coordinates__subtitle">Nёrds Design Studio</strong>
+      <strong class="coordinates__subtitle">Nёrds Design Studio</strong>
       <p class="text-decoration coordinates__info">191186, Санкт-Петербург,
         <br> ул. Б.Конюшенная, д. 19/8</p>
       <p class="text-decoration">тел. +7(812) 275-75-75</p>
@@ -223,32 +223,32 @@
     </div>
   </footer>
   <section class="feedback__popup" id="feedback__popup">
-      <!-- Hidden !-->
-      <div class="wrapper">
-        <strong class="feedback__subtitle">Напишите нам</strong>
-        <form action="#" method="post" class="feedback__form">
-          <div class="feedback__section">
-            <label for="contact_name" class="feedback__label">Ваше имя:</label>
-            <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" required autofocus>
-          </div>
-          <div class="feedback__section">
-            <label for="contact_email" class="feedback__label">Ваш e-mail:</label>
-            <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com"
-              required>
-          </div>
-          <div class="feedback__section">
-            <label for="contact_msg" class="feedback__label feedback__label-textarea">Текст письма: </label>
-            <textarea class="input__textarea" rows="3" cols="50" name="contact_msg" id="contact_msg" placeholder="В свободной форме"
-              required>
-            </textarea>
-          </div>
-          <div class="feedback__section">
-            <button class="btn btn__red" type="submit">Отправить</button>
-          </div>
-        </form>
-        <button type="button" class="close_window" id="btn_close">Закрыть</button>
-      </div>
-    </section>
+    <!-- Hidden !-->
+    <div class="wrapper">
+      <strong class="feedback__subtitle">Напишите нам</strong>
+      <form action="#" method="post" class="feedback__form">
+        <div class="feedback__section">
+          <label for="contact_name" class="feedback__label">Ваше имя:</label>
+          <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" required autofocus>
+        </div>
+        <div class="feedback__section">
+          <label for="contact_email" class="feedback__label">Ваш e-mail:</label>
+          <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com"
+            required>
+        </div>
+        <div class="feedback__section">
+          <label for="contact_msg" class="feedback__label feedback__label-textarea">Текст письма: </label>
+          <textarea class="input__textarea" rows="3" cols="50" name="contact_msg" id="contact_msg" placeholder="В свободной форме"
+            required>
+          </textarea>
+        </div>
+        <div class="feedback__section">
+          <button class="btn btn__red" type="submit">Отправить</button>
+        </div>
+      </form>
+      <button type="button" class="close_window" id="btn_close">Закрыть</button>
+    </div>
+  </section>
 </body>
 
 </html>

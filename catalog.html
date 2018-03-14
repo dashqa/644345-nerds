@@ -14,7 +14,7 @@
     <div class="wrapper">
       <div class="logo-box">
         <a href="index.html" class="logo__link">
-          <img src="img/nerds-logo.svg" class="logo" width="160" height="65" alt="Логотип Nerds">
+          <img src="img/nerds-logo.svg" class="main__logo" width="160" height="65" alt="Логотип Nerds">
         </a>
       </div>
       <nav class="main-menu">
@@ -44,7 +44,7 @@
       <section class="filter">
         <h3 class="visually-hidden">Фильтр по товарам</h3>
         <form action="/echo" method="get" class="filter__form">
-          <strong class="subtitle">Стоимость</strong>
+          <strong class="filter__subtitle">Стоимость</strong>
           <div class="filter__range">
             <div class="range range-low"></div>
             <div class="range range-high"></div>
@@ -58,7 +58,7 @@
             </p>
           </div>
           <fieldset class="filter__radio">
-            <legend class="subtitle">Сетка</legend>
+            <legend class="filter__subtitle">Сетка:</legend>
             <ul class="filter__radio-list">
               <li class="filter__radio-item">
                 <input type="radio" name="filter-group" id="filter-adaptive" class="filter__input filter__input-radio visually-hidden" checked>
@@ -75,7 +75,7 @@
             </ul>
           </fieldset>
           <fieldset class="filter__checkbox">
-            <legend class="subtitle">Особенности</legend>
+            <legend class="filter__subtitle">Особенности:</legend>
             <ul class="filter__checkbox-list">
               <li class="filter__checkbox-item">
                 <input type="checkbox" name="slider" id="filter-slider" class="filter__input filter__input-checkbox visually-hidden" checked>
@@ -99,13 +99,13 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="btn btn-gray">Показать</button>
+          <button type="submit" class="btn btn__gray">Показать</button>
         </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог продукции</h2>
         <div class="sorting">
-          <strong class="subtitle">Сортировать:</strong>
+          <strong class="sorting__subtitle">Сортировать:</strong>
           <form action="#" method="get">
             <ul class="sorting__list">
               <li class="sorting__item">
@@ -131,7 +131,7 @@
             <img src="img/img-sedona.jpg" width="360" height="576" alt="Образец продукта Sedona" class="catalog__item-img" tabindex="0">
             <div class="catalog__item-info">
               <!-- Hover !-->
-              <h3><a href="#" class="catalog__item-link">Sedona</a></h3>
+              <h3 class="catalog__item-subtitle">Sedona</h3>
               <p class="catalog__item-text">Информационный сайт
                 <br> для туристов</p>
               <a href="#" class="btn btn__red"> 9 900 руб.</a>
@@ -141,7 +141,7 @@
             <img src="img/img-pink.jpg" width="360" height="576" alt="Образец продукта Pink App" class="catalog__item-img" tabindex="0">
             <div class="catalog__item-info">
               <!-- Hover !-->
-              <h3><a href="#" class="catalog__item-link">Pink app</a></h3>
+              <h3 class="catalog__item-subtitle">Pink app</h3>
               <p class="catalog__item-text">Продуктовый лендинг
                 <br> приложений для iOS и Android</p>
               <a href="#" class="btn btn__red"> 9 900 руб.</a>
@@ -151,7 +151,7 @@
             <img src="img/img-barbershop.jpg" width="360" height="576" alt="Образец продукта Barbershop" class="catalog__item-img" tabindex="0">
             <div class="catalog__item-info">
               <!-- Hover !-->
-              <h3><a href="#" class="catalog__item-link">Barbershop</a></h3>
+              <h3 class="catalog__item-subtitle">Barbershop</h3>
               <p class="catalog__item-text">Сайт салоны красоты.
                 <br> Для мужчин, да.</p>
               <a href="#" class="btn btn__red"> 9 900 руб.</a>
@@ -161,7 +161,7 @@
             <img src="img/img-mishka.jpg" width="360" height="576" alt="Образец продукта Mishka" class="catalog__item-img" tabindex="0">
             <div class="catalog__item-info">
               <!-- Hover !-->
-              <h3><a href="#" class="catalog__item-link">Mishka</a></h3>
+              <h3 class="catalog__item-subtitle">Mishka</h3>
               <p class="catalog__item-text">Интернет магазин
                 <br> вязаных игрушек</p>
               <a href="#" class="btn btn__red"> 9 900 руб.</a>
@@ -171,7 +171,7 @@
             <img src="img/img-aplus.jpg" width="360" height="576" alt="Образец продукта A plus" class="catalog__item-img" tabindex="0">
             <div class="catalog__item-info">
               <!-- Hover !-->
-              <h3><a href="#" class="catalog__item-link">A plus</a></h3>
+              <h3 class="catalog__item-subtitle">A plus</h3>
               <p class="catalog__item-text">Лендинг курсов повышения
                 <br> квалификации</p>
               <a href="#" class="btn btn__red"> 9 900 руб.</a>
@@ -181,17 +181,17 @@
             <img src="img/img-kvast.jpg" width="360" height="576" alt="Образец продукта Кваст" class="catalog__item-img" tabindex="0">
             <div class="catalog__item-info">
               <!-- Hover !-->
-              <h3><a href="#" class="catalog__item-link">Кваст</a></h3>
+              <h3 class="catalog__item-subtitle">Кваст</h3>
               <p class="catalog__item-text">Промо-сайт производителя
                 <br> крафтового кваса</p>
               <a href="#" class="btn btn__red"> 9 900 руб.</a>
             </div>
           </article>
           <div class="page-switcher">
-            <a href="#" class="page-switcher__small">1</a>
-            <a href="#" class="page-switcher__small">2</a>
-            <a href="#" class="page-switcher__small">3</a>
-            <a href="#" class="page-switcher__big">Следующая</a>
+            <a href="#" class="page-switcher">1</a>
+            <a href="#" class="page-switcher">2</a>
+            <a href="#" class="page-switcher">3</a>
+            <a href="#" class="page-switcher">Следующая</a>
           </div>
         </div>
       </section>
@@ -237,32 +237,32 @@
     </div>
   </footer>
   <section class="feedback__popup" id="feedback__popup">
-      <!-- Hidden !-->
-      <div class="wrapper">
-        <strong class="feedback__subtitle">Напишите нам</strong>
-        <form action="#" method="post" class="feedback__form">
-          <div class="feedback__section">
-            <label for="contact_name" class="feedback__label">Ваше имя:</label>
-            <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" required autofocus>
-          </div>
-          <div class="feedback__section">
-            <label for="contact_email" class="feedback__label">Ваш e-mail:</label>
-            <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com"
-              required>
-          </div>
-          <div class="feedback__section">
-            <label for="contact_msg" class="feedback__label feedback__label-textarea">Текст письма: </label>
-            <textarea class="input__textarea" rows="3" cols="50" name="contact_msg" id="contact_msg" placeholder="В свободной форме"
-              required>
-            </textarea>
-          </div>
-          <div class="feedback__section">
-            <button class="btn btn__red" type="submit">Отправить</button>
-          </div>
-        </form>
-        <button type="button" class="close_window" id="btn_close">Закрыть</button>
-      </div>
-    </section>
+    <!-- Hidden !-->
+    <div class="wrapper">
+      <strong class="feedback__subtitle">Напишите нам</strong>
+      <form action="#" method="post" class="feedback__form">
+        <div class="feedback__section">
+          <label for="contact_name" class="feedback__label">Ваше имя:</label>
+          <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" required autofocus>
+        </div>
+        <div class="feedback__section">
+          <label for="contact_email" class="feedback__label">Ваш e-mail:</label>
+          <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com"
+            required>
+        </div>
+        <div class="feedback__section">
+          <label for="contact_msg" class="feedback__label feedback__label-textarea">Текст письма: </label>
+          <textarea class="input__textarea" rows="3" cols="50" name="contact_msg" id="contact_msg" placeholder="В свободной форме"
+            required>
+          </textarea>
+        </div>
+        <div class="feedback__section">
+          <button class="btn btn__red" type="submit">Отправить</button>
+        </div>
+      </form>
+      <button type="button" class="close_window" id="btn_close">Закрыть</button>
+    </div>
+  </section>
 </body>
 
 </html>
