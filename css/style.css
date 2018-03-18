@@ -1,11 +1,11 @@
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 body {
@@ -39,7 +39,13 @@ img {
 }
 
 .page-header {
+  margin-bottom: 80px;
   background-color: #eeeeee;
+}
+
+.page-header.catalog-page {
+  margin-bottom: 55px;
+  padding-bottom: 110px;
 }
 
 .main-menu {
@@ -71,6 +77,53 @@ img {
   color: #a6a6a6;
 }
 
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navigation-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+}
+
+.navigation-panel.catalog-page {
+  margin-bottom: 80px;
+}
+
+.logo__container {
+  width: 200px;
+  height: 65px;
+}
+
+.main-menu {
+  width: 800px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu__item {
+  margin-right: 45px;
+}
+
+.main-menu__item:nth-child(2) {
+  margin-right: 47px;
+}
+
+.main-menu__item:nth-child(4) {
+  margin-right: 285px;
+}
+
 .main__logo:hover,
 .main__logo:focus {
   opacity: 0.8;
@@ -80,12 +133,31 @@ img {
   opacity: 0.3;
 }
 
+.slider__inner-hidden {
+  overflow: hidden;
+}
+
+.slider__slides-item {
+  display: flex;
+  width: 300%;
+}
+
+.slider__slides-img {
+  width: 760px;
+  height: 431px;
+}
+
 .slider__slides-info-caption,
 .page-title {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
   color: #000000;
+}
+
+.page-title.catalog-page {
+  margin: 0 215px;
+  padding: 0;
 }
 
 .btn {
@@ -160,6 +232,17 @@ img {
   box-shadow: inset 1px 1px 10px -1px;
 }
 
+.product__list {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.product__item {
+  width: 300px;
+  height: 350px;
+  padding-right: 100px;
+}
+
 .product__caption {
   font-size: 24px;
   font-weight: 700;
@@ -168,17 +251,22 @@ img {
   text-transform: uppercase;
 }
 
-.projects__logo {
-  opacity: 0.2;
+.about-us__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 54px;
 }
 
-.projects__logo:hover,
-.projects__logo:focus {
-  opacity: 1;
+.about-us__info {
+  width: 700px;
 }
 
-.projects__logo:active {
-  opacity: 0.1;
+.about-us__statistic {
+  width: 400px;
+}
+
+.about-us__statistic-list {
+  display: flex;
 }
 
 .about-us__info-caption,
@@ -197,6 +285,32 @@ img {
   text-transform: uppercase;
 }
 
+.projects__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 80px;
+}
+
+.projects__item {
+  width: 260px;
+  height: 180px;
+}
+
+.projects__logo {
+  opacity: 0.2;
+}
+
+.projects__logo:hover,
+.projects__logo:focus {
+  opacity: 1;
+}
+
+.projects__logo:active {
+  opacity: 0.1;
+}
+
 .coordinates__subtitle,
 .catalog__item-subtitle {
   font-size: 18px;
@@ -204,6 +318,13 @@ img {
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.sorting {}
+
+.sorting__list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .sorting__subtitle {
@@ -234,6 +355,15 @@ img {
   line-height: 18px;
 }
 
+.catalog-filter__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter {
+  width: 300px;
+}
+
 .filter__subtitle {
   font-size: 18px;
   font-weight: 700;
@@ -252,11 +382,23 @@ img {
   border: none;
 }
 
+.catalog {
+  width: 800px;
+}
+
+.catalog__item-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .about-us__statistics-text-decoration {
   font-size: 45px;
 }
 
 .page-switcher {
+  margin-bottom: 60px;
+  margin-top: 62px;
   font-weight: 500;
   line-height: 18px;
   color: #000000;
@@ -267,6 +409,36 @@ img {
 .catalog__item-text {
   line-height: 18px;
   color: #666666;
+}
+
+.feedback {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.feedback__form {
+  position: absolute;
+  background-color: #fff;
+}
+
+.feedback__label {
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.feedback__popup,
+.catalog__item-info {
+  display: none;
+}
+
+.social-network {
+  width: 300px;
+}
+
+.social-network__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
 }
 
 .social-network__call-caption {
@@ -281,14 +453,14 @@ img {
   color: 444444;
 }
 
-.feedback__label {
-  font-weight: 700;
-  line-height: 18px;
+.social-network__call {
+  width: 800px;
+  padding-left: 40px;
 }
 
-.feedback__popup,
-.catalog__item-info {
-  display: none;
+.social-network__list {
+  margin: 0;
+  padding: 0;
 }
 
 .social-network__item {
@@ -319,6 +491,3 @@ img {
   margin: 14px;
 }
 
-.social-network__img {
-
-}

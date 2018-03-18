@@ -12,26 +12,30 @@
 <body>
   <header class="page-header" id="page-header">
     <div class="wrapper">
-      <img src="img/nerds-logo.svg" class="main__logo" width="160" height="65" alt="Логотип Nerds">
-      <nav class="main-menu">
-        <ul class="main-menu__list">
-          <li class="main-menu__item">
-            <a href="#" class="main-menu__link">Студия</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#product" class="main-menu__link">Клиенты</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="catalog.html" class="main-menu__link">Магазин</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#coordinates" class="main-menu__link">Контакты</a>
-          </li>
-          <li class="main-menu__item main-menu__item-cart">
-            <a href="#" class="main-menu__link">Корзина</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="navigation-panel">
+        <div class="logo__container">
+          <img src="img/nerds-logo.svg" class="main__logo" width="160" height="65" alt="Логотип Nerds">
+        </div>
+        <nav class="main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Студия</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#product" class="main-menu__link">Клиенты</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="catalog.html" class="main-menu__link">Магазин</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#coordinates" class="main-menu__link">Контакты</a>
+            </li>
+            <li class="main-menu__item main-menu__item-cart">
+              <a href="#" class="main-menu__link">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <section class="slider-box" id="slider-box">
         <div class="slider__input">
           <input type="radio" id="slider-control-1" name="toggle" class="slider-control-1" checked>
@@ -53,10 +57,10 @@
                   <a href="#" class="btn btn__red btn__big">Узнать больше</a>
                 </div>
                 <figure class="slider__slides-img">
-                  <img src="img/slide1.png" width="760" height="431" alt="Математически выверенный дизайн для вашего сайта или мобильного приложения">
+                  <img src="img/slide1.png" width="700" height="431" alt="Математически выверенный дизайн для вашего сайта или мобильного приложения">
                 </figure>
               </div>
-              <div class="slider__slides-item">
+              <div class="slider__slides-item visually-hidden">
                 <div class="slider__slides-info">
                   <h2 class="slider__slides-info-caption">Любим математику
                     <br> как никто другой</h2>
@@ -68,7 +72,7 @@
                   <img src="img/slide2.png" width="760" height="431" alt="Никакого креатив, только математические формулы для расчета идеальных пропорций">
                 </figure>
               </div>
-              <div class="slider__slides-item">
+              <div class="slider__slides-item visually-hidden">
                 <div class="slider__slides-info">
                   <h2 class="slider__slides-info-caption">Только ночь,
                     <br> только хардкор</h2>
@@ -87,9 +91,9 @@
     </div>
   </header>
   <main class="page-main" id="page-main">
-    <section class="product__list" id="product__list">
+    <section class="products" id="products">
       <h2 class="visually-hidden">Список продуктов</h2>
-      <div class="wrapper">
+      <div class="wrapper product__list">
         <div class="product__item">
           <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
           <strong class="product__caption">Веб-сайты</strong>
@@ -115,7 +119,7 @@
     </section>
     <section class="about-us" id="about-us">
       <h2 class="visually-hidden">Информация о нас</h2>
-      <div class="wrapper">
+      <div class="wrapper about-us__container">
         <div class="about-us__info">
           <strong class="about-us__info-caption">Мы - маленькая, но гордая
             <br> дизайн-студия из Краснодара.</strong>
@@ -131,27 +135,29 @@
         <div class="about-us__statistic">
           <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип Nerds">
           <strong class="about-us__statistic-subtitle">C 2014 года любим точность во всем:</strong>
-        </div>
-        <div class="about-us__statistic-item">
-          <p class="text-decoration about-us__statistics-text-decoration">146
-            <sup>%</sup>
-          </p>
-          <span class="span-decoration">Уровень
-            <br> самоотдачи</span>
-        </div>
-        <div class="about-us__statistic-item">
-          <p class="text-decoration about-us__statistics-text-decoration">100
-            <sup>%</sup>
-          </p>
-          <span class="span-decoration">Соблюдение
-            <br> сроков</span>
-        </div>
-        <div class="about-us__statistic-item">
-          <p class="text-decoration about-us__statistics-text-decoration">50
-            <sup>%</sup>
-          </p>
-          <span class="span-decoration">Минимальная
-            <br> предоплата</span>
+          <div class="about-us__statistic-list">
+            <div class="about-us__statistic-item">
+              <p class="text-decoration about-us__statistics-text-decoration">146
+                <sup>%</sup>
+              </p>
+              <span class="span-decoration">Уровень
+                <br> самоотдачи</span>
+            </div>
+            <div class="about-us__statistic-item">
+              <p class="text-decoration about-us__statistics-text-decoration">100
+                <sup>%</sup>
+              </p>
+              <span class="span-decoration">Соблюдение
+                <br> сроков</span>
+            </div>
+            <div class="about-us__statistic-item">
+              <p class="text-decoration about-us__statistics-text-decoration">50
+                <sup>%</sup>
+              </p>
+              <span class="span-decoration">Минимальная
+                <br> предоплата</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -186,17 +192,18 @@
   <section class="coordinates" id="coordinates">
     <h2 class="visually-hidden">Контактные данные</h2>
     <div class="feedback">
-      <strong class="coordinates__subtitle">Nёrds Design Studio</strong>
-      <p class="text-decoration coordinates__info">191186, Санкт-Петербург,
-        <br> ул. Б.Конюшенная, д. 19/8</p>
-      <p class="text-decoration">тел. +7(812) 275-75-75</p>
-      <button type="button" class="btn btn__red btn__feedback">Напишите нам</button>
+      <div class="feedback__form">
+        <strong class="coordinates__subtitle">Nёrds Design Studio</strong>
+        <p class="text-decoration coordinates__info">191186, Санкт-Петербург,
+          <br> ул. Б.Конюшенная, д. 19/8</p>
+        <p class="text-decoration">тел. +7(812) 275-75-75</p>
+        <button type="button" class="btn btn__red btn__feedback">Напишите нам</button>
+      </div>
       <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      <img src="img/map-marker.png" width="367" height="190" alt="дом 19/8">
     </div>
   </section>
   <footer class="page-footer" id="page-footer">
-    <div class="wrapper">
+    <div class="wrapper social-network__container">
       <div class="social-network">
         <ul class="social-network__list">
           <li class="social-network__item">
