@@ -107,7 +107,7 @@
           <h2 class="visually-hidden">Каталог продукции</h2>
           <div class="sorting">
             <strong class="sorting__subtitle">Сортировать:</strong>
-            <form action="#" method="get">
+            <form action="#" method="get" class="sorting-form__container">
               <ul class="sorting__list">
                 <li class="sorting__item">
                   <a href="#" class="sorting__link">По цене</a>
@@ -188,11 +188,11 @@
                 <a href="#" class="btn btn__red"> 9 900 руб.</a>
               </div>
             </article>
-            <div class="page-switcher">
-              <a href="#" class="page-switcher">1</a>
-              <a href="#" class="page-switcher">2</a>
-              <a href="#" class="page-switcher">3</a>
-              <a href="#" class="page-switcher">Следующая</a>
+            <div class="page-switcher__container">
+              <div class="page-switcher__box"><a href="#" class="page-switcher">1</a></div>
+              <div class="page-switcher__box"><a href="#" class="page-switcher">2</a></div>
+              <div class="page-switcher__box"><a href="#" class="page-switcher">3</a></div>
+              <div class="page-switcher__box"><a href="#" class="page-switcher">Следующая</a></div>
             </div>
           </div>
         </section>
@@ -201,7 +201,7 @@
   </main>
   <section class="coordinates" id="coordinates">
     <h2 class="visually-hidden">Контактные данные</h2>
-    <div class="feedback">
+    <div class="feedback wrapper">
       <div class="feedback__form">
         <strong class="coordinates__subtitle">Nёrds Design Studio</strong>
         <p class="text-decoration coordinates__info">191186, Санкт-Петербург,
@@ -209,7 +209,8 @@
         <p class="text-decoration">тел. +7(812) 275-75-75</p>
         <button type="button" class="btn btn__red btn__feedback">Напишите нам</button>
       </div>
-      <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <div class="map__box" aria-label="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </div>
     </div>
   </section>
   <footer class="page-footer" id="page-footer">
