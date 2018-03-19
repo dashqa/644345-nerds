@@ -320,11 +320,24 @@ img {
   text-transform: uppercase;
 }
 
-.sorting {}
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.sorting-form__container {
+  align-items: flex-end;
+}
 
 .sorting__list {
   display: flex;
-  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.sorting__item {
+  margin-right: 27px;
 }
 
 .sorting__subtitle {
@@ -403,6 +416,17 @@ img {
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.map__box {
+  height: 418px;
+}
+
+.coordinates {
+  margin-bottom: 70px;
+  background-image: url("/img/map.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .coordinates__info,
@@ -490,4 +514,3 @@ img {
   height: 50px;
   margin: 14px;
 }
-
