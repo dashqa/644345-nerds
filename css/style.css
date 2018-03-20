@@ -60,7 +60,7 @@ img {
 .main-menu-user__list,
 .slider__list,
 .about-us__info-list,
-.projects__list,
+.partners__list,
 .social-network__list,
 .filter__radio-list,
 .filter__checkbox-list,
@@ -291,8 +291,6 @@ img {
   border-radius: 50%;
 }
 
-
-
 .page-title.catalog-page {
   margin: 0 215px;
   padding: 0;
@@ -415,8 +413,6 @@ img {
 
 .about-us {
   padding-top: 80px;
-  border-top: 3px solid #eeeeee;
-  border-bottom: 3px solid #eeeeee;
 }
 
 .about-us__container {
@@ -427,14 +423,62 @@ img {
 
 .about-us__info {
   width: 700px;
+  align-items: 50px;
+}
+
+.about-us__info-caption {
+  display: block;
+  margin-bottom: 35px;
+}
+
+.about-us__info-text-decoration,
+.about-us__statistics-text-decoration {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.about-us__info-subtitle {
+  display: block;
+  margin-bottom: 33px;
+}
+
+.about-us__statistic-subtitle {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-us__info-list {
+  margin: 0;
+  padding: 0;
+}
+
+.about-us__info-item {
+  margin-bottom: 35px;
+  padding-left: 35px;
 }
 
 .about-us__statistic {
   width: 400px;
 }
 
+.about-us__logo {
+  position: relative;
+  left: 20px;
+}
+
 .about-us__statistic-list {
   display: flex;
+  justify-content: space-between;
+}
+
+.about-us__statistic-item {
+
+}
+
+.about-us__statistic-item:last-child {
+  margin-right: 15px;
 }
 
 .about-us__info-caption,
@@ -453,7 +497,7 @@ img {
   text-transform: uppercase;
 }
 
-.projects__list {
+.partners__list {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -461,7 +505,7 @@ img {
   margin-bottom: 80px;
 }
 
-.projects__item {
+.partners__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -469,16 +513,16 @@ img {
   height: 180px;
 }
 
-.projects__logo {
+.partners__logo {
   opacity: 0.2;
 }
 
-.projects__logo:hover,
-.projects__logo:focus {
+.partners__logo:hover,
+.partners__logo:focus {
   opacity: 1;
 }
 
-.projects__logo:active {
+.partners__logo:active {
   opacity: 0.1;
 }
 
@@ -634,6 +678,21 @@ img {
   background-position: center;
 }
 
+.coordinates__subtitle {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.coordinates__coordinates__info {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.coordinates__text-decoration {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 .coordinates__info,
 .catalog__item-text {
   line-height: 18px;
@@ -647,6 +706,8 @@ img {
 
 .feedback__form {
   position: absolute;
+  top: 55px;
+  padding: 50px 55px;
   background-color: #fff;
 }
 
