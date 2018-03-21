@@ -38,7 +38,7 @@
           </ul>
         </nav>
       </div>
-      <h1 class="page-title catalog-page">Магазин готовых шаблонов</h1>
+      <h1 class="catalog-page__title">Магазин готовых шаблонов</h1>
     </div>
   </header>
   <main class="page-main" id="page-main">
@@ -47,10 +47,15 @@
         <section class="filter">
           <h3 class="visually-hidden">Фильтр по товарам</h3>
           <form action="/echo" method="get" class="filter__form">
-            <strong class="filter__subtitle">Стоимость</strong>
+            <strong class="filter__subtitle">Стоимость:</strong>
             <div class="filter__range">
+              <div class="filter__controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
               <div class="range range-low"></div>
               <div class="range range-high"></div>
+              </div>
               <p class="range__amount">
                 <label for="low-price" class="range__low">от
                   <input name="low-price" type="text" value="0">
@@ -81,7 +86,8 @@
               <legend class="filter__subtitle">Особенности:</legend>
               <ul class="filter__checkbox-list">
                 <li class="filter__checkbox-item">
-                  <input type="checkbox" name="checkbox-group" id="filter-slider" class="filter__input filter__input-checkbox visually-hidden" checked>
+                  <input type="checkbox" name="checkbox-group" id="filter-slider" class="filter__input filter__input-checkbox visually-hidden"
+                    checked>
                   <label for="filter-slider">Слайдер</label>
                 </li>
                 <li class="filter__checkbox-item">
@@ -89,7 +95,8 @@
                   <label for="filter-advantages">Блок преимуществ</label>
                 </li>
                 <li class="filter__checkbox-item">
-                  <input type="checkbox" name="checkbox-group" id="filter-news" class="filter__input filter__input-checkbox visually-hidden" checked>
+                  <input type="checkbox" name="checkbox-group" id="filter-news" class="filter__input filter__input-checkbox visually-hidden"
+                    checked>
                   <label for="filter-news">Новости</label>
                 </li>
                 <li class="filter__checkbox-item">
@@ -190,6 +197,7 @@
                 <a href="#" class="btn btn__red"> 9 900 руб.</a>
               </div>
             </article>
+            </div>
             <div class="page-switcher__container">
               <div class="page-switcher__box">
                 <a href="#" class="page-switcher">1</a>
@@ -204,7 +212,6 @@
                 <a href="#" class="page-switcher">Следующая</a>
               </div>
             </div>
-          </div>
         </section>
       </div>
     </div>
@@ -214,9 +221,9 @@
     <div class="feedback wrapper">
       <div class="feedback__form">
         <strong class="coordinates__subtitle">Nёrds Design Studio</strong>
-        <p class="text-decoration coordinates__info">191186, Санкт-Петербург,
-          <br> ул. Б.Конюшенная, д. 19/8</p>
-        <p class="text-decoration">тел. +7(812) 275-75-75</p>
+        <p class="coordinates__info">191186, Санкт-Петербург,
+          <br> ул. Б. Конюшенная, д. 19/8</p>
+        <p class="coordinates__text-decoration">тел. +7(812) 275-75-75</p>
         <button type="button" class="btn btn__red btn__feedback">Напишите нам</button>
       </div>
       <div class="map__box" aria-label="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
@@ -246,7 +253,7 @@
       </div>
       <div class="social-network__call">
         <strong class="social-network__call-caption">Давайте дружить, это выгодно!</strong>
-        <p class="text-decoration social-network__call-text">Скидка 10% для друзей из социальных сетей.</p>
+        <p class="social-network__call-text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
   </footer>

@@ -95,7 +95,7 @@ img {
 }
 
 .navigation-panel.catalog-page {
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 .logo__container {
@@ -142,7 +142,7 @@ img {
   background-image: url("/img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.4
+  opacity: 0.3
 
 }
 
@@ -220,14 +220,18 @@ img {
   border-radius: 50%;
 }
 
-.slider__info-caption {
-  max-width: 600px;
-  margin: 0;
-  margin-bottom: 26px;
+.slider__info-caption,
+.catalog-page__title {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
   color: #000000;
+}
+
+.slider__info-caption {
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .slider__text-decoration {
@@ -291,7 +295,8 @@ img {
   border-radius: 50%;
 }
 
-.page-title.catalog-page {
+.catalog-page__title {
+  max-width: 735px;
   margin: 0 215px;
   padding: 0;
 }
@@ -412,7 +417,7 @@ img {
 }
 
 .about-us {
-  padding-top: 80px;
+  padding-top: 42px;
 }
 
 .about-us__container {
@@ -423,30 +428,29 @@ img {
 
 .about-us__info {
   width: 700px;
-  align-items: 50px;
+  padding-top: 35px;
 }
 
 .about-us__info-caption {
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
-.about-us__info-text-decoration,
-.about-us__statistics-text-decoration {
+.about-us__info-text-decoration {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 38px;
 }
 
 .about-us__info-subtitle {
   display: block;
-  margin-bottom: 33px;
+  margin-bottom: 25px;
 }
 
 .about-us__statistic-subtitle {
   display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding-left: 56px;
 }
 
 .about-us__info-list {
@@ -455,7 +459,7 @@ img {
 }
 
 .about-us__info-item {
-  margin-bottom: 35px;
+  margin-bottom: 24px;
   padding-left: 35px;
 }
 
@@ -465,20 +469,30 @@ img {
 
 .about-us__logo {
   position: relative;
-  left: 20px;
+  left: 40px;
 }
 
 .about-us__statistic-list {
   display: flex;
   justify-content: space-between;
+  padding-left: 40px;
 }
 
-.about-us__statistic-item {
-
+.about-us__statistics-text-decoration {
+  margin: 0;
+  font-size: 45px;
+  margin-bottom: 15px;
 }
 
 .about-us__statistic-item:last-child {
   margin-right: 15px;
+}
+
+.about-us__statistics-sup {
+  position: relative;
+  top: -0.7em;
+  left: -0.4em;
+  font-size: 55%;
 }
 
 .about-us__info-caption,
@@ -538,7 +552,7 @@ img {
 .sorting {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 97px;
+  margin-bottom: 52px;
 }
 
 .sorting-form__container {
@@ -611,7 +625,7 @@ img {
 }
 
 .catalog {
-  width: 800px;
+  width: 760px;
 }
 
 .catalog__item-box {
@@ -621,16 +635,24 @@ img {
 }
 
 .catalog__item {
-  margin-right: 40px;
-  margin-bottom: 75px;
+  margin-bottom: 27px;
 }
 
-.about-us__statistics-text-decoration {
-  font-size: 45px;
+.catalog__item::before {
+  display: block;
+  content: "";
+  width: 360px;
+  height: 40px;
+  background-image: url("/img/browser.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.12;
 }
 
 .page-switcher__container {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
   margin-bottom: 60px;
 }
 
@@ -683,14 +705,21 @@ img {
   margin-bottom: 25px;
 }
 
-.coordinates__coordinates__info {
+.coordinates__info,
+.coordinates__text-decoration {
+  color: #666666;
+}
+
+.coordinates__info {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+  margin-left: 3px;
 }
 
 .coordinates__text-decoration {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+  margin-left: 5px;
 }
 
 .coordinates__info,
@@ -732,6 +761,8 @@ img {
 }
 
 .social-network__call-caption {
+  display: block;
+  margin-bottom: 15px;
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
@@ -739,6 +770,7 @@ img {
 }
 
 .social-network__call-text {
+  margin: 0;
   line-height: 22px;
   color: 444444;
 }
@@ -749,6 +781,9 @@ img {
 }
 
 .social-network__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -757,10 +792,13 @@ img {
   display: inline-block;
   width: 78px;
   height: 78px;
-  margin-left: 12px;
   background-color: #e1e1e1;
   border-radius: 50%;
   vertical-align: middle;
+}
+
+.social-network__item:last-child {
+  margin-right: 40px;
 }
 
 .social-network__item:hover,
