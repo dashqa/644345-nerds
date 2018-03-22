@@ -121,7 +121,7 @@ img {
 }
 
 .main-menu__item {
-  margin-right: 47px;
+  margin-right: 46px;
 }
 
 .main-menu-user__list {
@@ -134,8 +134,9 @@ img {
 
 .main-menu__user-item::before {
   position: absolute;
-  top: 7px;
-  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -40px;
   content: "";
   width: 16px;
   height: 18px;
@@ -544,7 +545,7 @@ img {
 }
 
 .partners__list::after {
-  top: 177px;
+  top: 175px;
 }
 
 .product__list::after {
@@ -552,11 +553,10 @@ img {
 }
 
 .about-us__container::after {
-  top: 487px;
+  top: 485px;
 }
 
 .partners__link {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -564,10 +564,14 @@ img {
   height: 180px;
 }
 
- .partners__link:not(:last-child)::after{
+.partners__item {
+  position: relative;
+}
+
+ .partners__item:not(:first-child)::after {
   position: absolute;
   top: 60px;
-  left: 280px;
+  right: 280px;
   content: "";
   width: 2px;
   height: 55px;
@@ -823,8 +827,7 @@ img {
 }
 
 .social-network__call {
-  width: 800px;
-  padding-left: 40px;
+  width: 760px;
 }
 
 .social-network__list {
