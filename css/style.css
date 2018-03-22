@@ -387,6 +387,7 @@ img {
 }
 
 .product__list {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
@@ -421,9 +422,10 @@ img {
 }
 
 .about-us__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 48px;
+  margin-bottom: 55px;
 }
 
 .about-us__info {
@@ -527,11 +529,12 @@ img {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-bottom: 80px;
+  margin-bottom: 78px;
 }
 
-.products::after,
-.partners__list::after {
+.product__list::after,
+.partners__list::after,
+.about-us__container::after {
   position: absolute;
   content: "";
   width: 1160px;
@@ -541,19 +544,34 @@ img {
 }
 
 .partners__list::after {
-  top: 182px;
+  top: 177px;
 }
 
-.products::after {
-  left: 90px;
+.product__list::after {
+  top: 428px;
 }
 
-.partners__item {
+.about-us__container::after {
+  top: 487px;
+}
+
+.partners__link {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 260px;
   height: 180px;
+}
+
+ .partners__link:not(:last-child)::after{
+  position: absolute;
+  top: 60px;
+  left: 280px;
+  content: "";
+  width: 2px;
+  height: 55px;
+  background-color: #eeeeee;
 }
 
 .partners__logo {
