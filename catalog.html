@@ -49,24 +49,26 @@
         <section class="filter">
           <h3 class="visually-hidden">Фильтр по товарам</h3>
           <form action="/echo" method="get" class="filter__form">
-            <strong class="filter__subtitle">Стоимость:</strong>
-            <div class="filter__range">
-              <div class="filter__controls">
-                <div class="scale">
-                  <div class="bar"></div>
+            <fieldset class="filter__amount">
+              <legend class="filter__subtitle">Стоимость:</legend>
+              <div class="filter__range">
+                <div class="filter__controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
                 </div>
-                <div class="range range-low"></div>
-                <div class="range range-high"></div>
+                <div class="price__controls">
+                  <label class="price__controls-label min-price">от
+                    <input name="min-price" type="text" value="0" class="price__input">
+                  </label>
+                  <label class="price__controls-label max-price">до
+                    <input name="max-price" type="text" value="15000" class="price__input">
+                  </label>
+                </div>
               </div>
-              <p class="range__amount">
-                <label for="low-price" class="range__low">от
-                  <input name="low-price" type="text" value="0">
-                </label>
-                <label for="high-price" class="range__high">до
-                  <input name="high-price" type="text" value="15000">
-                </label>
-              </p>
-            </div>
+            </fieldset>
             <fieldset class="filter__radio">
               <legend class="filter__subtitle">Сетка:</legend>
               <ul class="filter__radio-list">
@@ -111,7 +113,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button type="submit" class="btn btn__gray">Показать</button>
+            <button type="submit" class="btn btn__gray btn__filter">Показать</button>
           </form>
         </section>
         <section class="catalog">
@@ -129,13 +131,15 @@
                 <li class="sorting__item">
                   <a href="#" class="sorting__link">По названию</a>
                 </li>
-                <li class="sorting__item sorting__item-arrowdown current" tabindex="0">
-                  <a href="#" class="sorting__link">
+              </ul>
+              <ul class="order__list">
+                <li class="order__item order__item-arrowdown current" tabindex="0">
+                  <a href="#" class="order__link">
                     <span class="visually-hidden">По убыванию</span>
                   </a>
                 </li>
-                <li class="sorting__item sorting__item-arrowup" tabindex="0">
-                  <a href="#" class="sorting__link" >
+                <li class="order__item order__item-arrowup" tabindex="0">
+                  <a href="#" class="order__link">
                     <span class="visually-hidden">По возрастанию</span>
                   </a>
                 </li>
