@@ -14,7 +14,9 @@
     <div class="wrapper">
       <div class="navigation-panel catalog-page">
         <div class="logo__container">
-          <img src="img/nerds-logo.svg" class="main__logo" width="160" height="65" alt="Логотип Nerds">
+          <a href="index.html">
+            <img src="img/nerds-logo.svg" class="main__logo" width="160" height="65" alt="Логотип Nerds">
+          </a>
         </div>
         <nav class="main-menu">
           <ul class="main-menu__list">
@@ -24,7 +26,7 @@
             <li class="main-menu__item">
               <a href="#" class="main-menu__link">Клиенты</a>
             </li>
-            <li class="main-menu__item">
+            <li class="main-menu__item current">
               <a href="#" class="main-menu__link">Магазин</a>
             </li>
             <li class="main-menu__item">
@@ -119,7 +121,7 @@
             <form action="#" method="get" class="sorting-form__container">
               <ul class="sorting__list">
                 <li class="sorting__item">
-                  <a href="#" class="sorting__link">По цене</a>
+                  <a href="#" class="sorting__link current">По цене</a>
                 </li>
                 <li class="sorting__item">
                   <a href="#" class="sorting__link">По типу</a>
@@ -127,11 +129,15 @@
                 <li class="sorting__item">
                   <a href="#" class="sorting__link">По названию</a>
                 </li>
-                <li class="sorting__item sorting__item-arrowup">
-                  <a href="#" class="sorting__link" aria-label="По возрастанию"></a>
+                <li class="sorting__item sorting__item-arrowdown current" tabindex="0">
+                  <a href="#" class="sorting__link">
+                    <span class="visually-hidden">По убыванию</span>
+                  </a>
                 </li>
-                <li class="sorting__item sorting__item-arrowdown">
-                  <a href="#" class="sorting__link" aria-label="По убыванию"></a>
+                <li class="sorting__item sorting__item-arrowup" tabindex="0">
+                  <a href="#" class="sorting__link" >
+                    <span class="visually-hidden">По возрастанию</span>
+                  </a>
                 </li>
               </ul>
             </form>
@@ -141,7 +147,9 @@
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Образец продукта Sedona" class="catalog__item-img" tabindex="0">
               <div class="catalog__item-info">
                 <!-- Hover !-->
-                <h3 class="catalog__item-subtitle">Sedona</h3>
+                <h3 class="catalog__item-subtitle">
+                  <a href="#" class="catalog__item-link">Sedona</a>
+                </h3>
                 <p class="catalog__item-text">Информационный сайт
                   <br> для туристов</p>
                 <a href="#" class="btn btn__red"> 9 900 руб.</a>
@@ -151,7 +159,9 @@
               <img src="img/img-pink.jpg" width="360" height="576" alt="Образец продукта Pink App" class="catalog__item-img" tabindex="0">
               <div class="catalog__item-info">
                 <!-- Hover !-->
-                <h3 class="catalog__item-subtitle">Pink app</h3>
+                <h3 class="catalog__item-subtitle">
+                  <a href="#" class="catalog__item-link">Pink app</a>
+                </h3>
                 <p class="catalog__item-text">Продуктовый лендинг
                   <br> приложений для iOS и Android</p>
                 <a href="#" class="btn btn__red"> 9 900 руб.</a>
@@ -161,7 +171,9 @@
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Образец продукта Barbershop" class="catalog__item-img" tabindex="0">
               <div class="catalog__item-info">
                 <!-- Hover !-->
-                <h3 class="catalog__item-subtitle">Barbershop</h3>
+                <h3 class="catalog__item-subtitle">
+                  <a href="#" class="catalog__item-link">Barbershop</a>
+                </h3>
                 <p class="catalog__item-text">Сайт салоны красоты.
                   <br> Для мужчин, да.</p>
                 <a href="#" class="btn btn__red"> 9 900 руб.</a>
@@ -171,7 +183,9 @@
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Образец продукта Mishka" class="catalog__item-img" tabindex="0">
               <div class="catalog__item-info">
                 <!-- Hover !-->
-                <h3 class="catalog__item-subtitle">Mishka</h3>
+                <h3 class="catalog__item-subtitle">
+                  <a href="#" class="catalog__item-link">Mishka</a>
+                </h3>
                 <p class="catalog__item-text">Интернет магазин
                   <br> вязаных игрушек</p>
                 <a href="#" class="btn btn__red"> 9 900 руб.</a>
@@ -181,7 +195,9 @@
               <img src="img/img-aplus.jpg" width="360" height="576" alt="Образец продукта A plus" class="catalog__item-img" tabindex="0">
               <div class="catalog__item-info">
                 <!-- Hover !-->
-                <h3 class="catalog__item-subtitle">A plus</h3>
+                <h3 class="catalog__item-subtitle">
+                  <a href="#" class="catalog__item-link">A plus</a>
+                </h3>
                 <p class="catalog__item-text">Лендинг курсов повышения
                   <br> квалификации</p>
                 <a href="#" class="btn btn__red"> 9 900 руб.</a>
@@ -191,7 +207,9 @@
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Образец продукта Кваст" class="catalog__item-img" tabindex="0">
               <div class="catalog__item-info">
                 <!-- Hover !-->
-                <h3 class="catalog__item-subtitle">Кваст</h3>
+                <h3 class="catalog__item-subtitle">
+                  <a href="#" class="catalog__item-link">Кваст</a>
+                </h3>
                 <p class="catalog__item-text">Промо-сайт производителя
                   <br> крафтового кваса</p>
                 <a href="#" class="btn btn__red"> 9 900 руб.</a>
@@ -199,10 +217,10 @@
             </article>
           </div>
           <div class="page-switcher__container">
-              <a href="#" class="page-switcher">1</a>
-              <a href="#" class="page-switcher">2</a>
-              <a href="#" class="page-switcher">3</a>
-              <a href="#" class="page-switcher">Следующая</a>
+            <a class="page-switcher current">1</a>
+            <a href="#" class="page-switcher">2</a>
+            <a href="#" class="page-switcher">3</a>
+            <a href="#" class="page-switcher">Следующая</a>
           </div>
         </section>
       </div>
@@ -215,7 +233,7 @@
         <strong class="coordinates__subtitle">Nёrds Design Studio</strong>
         <p class="coordinates__info">191186, Санкт-Петербург,
           <br> ул. Б. Конюшенная, д. 19/8</p>
-        <p class="coordinates__text-decoration">тел. +7(812) 275-75-75</p>
+        <p class="coordinates__text-decoration">тел. +7 (812) 275-75-75</p>
         <button type="button" class="btn btn__red btn__feedback">Напишите нам</button>
       </div>
       <div class="map__box" aria-label="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
