@@ -744,6 +744,27 @@ img {
   cursor: pointer;
 }
 
+.filter__label {
+  position: relative;
+  cursor: pointer;
+}
+
+label::before {
+  width: 26px;
+  height: 26px;
+  border: solid 2px #5a5a5a;
+}
+
+label::after {
+  width: 26px;
+  height: 26px;
+}
+
+.filter__input[type="radio"],
+.filter__input[type="checkbox"] {
+  display: none;
+}
+
 .price__controls {
   display: flex;
   width: 260px;
