@@ -1046,7 +1046,7 @@ img {
   margin-bottom: 70px;
 }
 
-.feedback__form {
+.coordinates__form {
   position: absolute;
   top: 55px;
   padding: 47px 50px;
@@ -1058,8 +1058,71 @@ img {
   line-height: 18px;
 }
 
-.feedback__popup {
-  display: none;
+.feedback__modal {
+  position: fixed;
+  bottom: 50px;
+  left: 230px;
+  width: 960px;
+  padding: 35px 120px 110px;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
+  z-index: 100;
+}
+
+.feedback__subtitle {
+  display: inline-block;
+  margin-bottom: 40px;
+  vertical-align: top;
+}
+
+.contact__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.feedback__form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__form-box:last-of-type {
+  margin-bottom: 40px;
+}
+
+.feedback__label {
+  margin-bottom: 10px;
+}
+
+.close_window {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 25px;
+  height: 25px;
+  font-size: 0;
+  background-color: red;
+  border: 0;
+  cursor: pointer;
+}
+
+.close_window::before,
+.close_window::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+}
+
+.close_window::before {
+  transform: rotate(45deg);
+}
+
+.close_window::after {
+  transform: rotate(-45deg);
 }
 
 .social-network {

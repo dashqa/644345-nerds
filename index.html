@@ -172,7 +172,7 @@
   <section class="coordinates" id="coordinates">
     <h2 class="visually-hidden">Контактные данные</h2>
     <div class="feedback wrapper">
-      <div class="feedback__form">
+      <div class="coordinates__form">
         <strong class="coordinates__subtitle">Nёrds Design Studio</strong>
         <p class="coordinates__info">191186, Санкт-Петербург,
           <br> ул. Б. Конюшенная, д. 19/8</p>
@@ -230,32 +230,30 @@
       </div>
     </div>
   </footer>
-  <section class="feedback__popup" id="feedback__popup">
+  <section class="feedback__modal" id="feedback__modal">
     <!-- Hidden !-->
-    <div class="wrapper">
       <strong class="feedback__subtitle">Напишите нам</strong>
-      <form action="#" method="post" class="feedback__form">
-        <div class="feedback__section">
-          <label for="contact_name" class="feedback__label">Ваше имя:</label>
-          <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" required autofocus>
+      <form action="https://echo.htmlacademy.ru" method="post" class="feedback__form">
+        <div class="contact__info">
+          <div class="feedback__form-box">
+        <label for="contact_name" class="feedback__label">Ваше имя:</label>
+        <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" required autofocus>
+      </div>
+      <div class="feedback__form-box">
+        <label for="contact_email" class="feedback__label">Ваш e-mail:</label>
+        <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com"
+          required>
+          </div>
         </div>
-        <div class="feedback__section">
-          <label for="contact_email" class="feedback__label">Ваш e-mail:</label>
-          <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com"
-            required>
+        <div class="feedback__form-box">
+        <label for="contact_msg" class="feedback__label feedback__label-textarea">Текст письма: </label>
+        <textarea class="input__textarea" rows="3" cols="50" name="contact_msg" id="contact_msg" placeholder="В свободной форме"
+          required>
+        </textarea>
         </div>
-        <div class="feedback__section">
-          <label for="contact_msg" class="feedback__label feedback__label-textarea">Текст письма: </label>
-          <textarea class="input__textarea" rows="3" cols="50" name="contact_msg" id="contact_msg" placeholder="В свободной форме"
-            required>
-          </textarea>
-        </div>
-        <div class="feedback__section">
-          <button class="btn btn__red" type="submit">Отправить</button>
-        </div>
+        <button class="btn btn__red" type="submit">Отправить</button>
       </form>
       <button type="button" class="close_window" id="btn_close">Закрыть</button>
-    </div>
   </section>
 </body>
 
