@@ -237,21 +237,19 @@
         <div class="contact__info">
           <div class="feedback__form-box">
         <label for="contact_name" class="feedback__label">Ваше имя:</label>
-        <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" required autofocus>
+        <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" autofocus>
       </div>
       <div class="feedback__form-box">
         <label for="contact_email" class="feedback__label">Ваш e-mail:</label>
-        <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com"
-          required>
+        <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com">
           </div>
         </div>
-        <div class="feedback__form-box">
+        <div class="feedback__form-box feedback__textarea-box">
         <label for="contact_msg" class="feedback__label feedback__label-textarea">Текст письма: </label>
-        <textarea class="input__textarea" rows="3" cols="50" name="contact_msg" id="contact_msg" placeholder="В свободной форме"
-          required>
+        <textarea class="input__textarea" name="contact_msg" id="contact_msg" placeholder="В свободной форме">
         </textarea>
         </div>
-        <button class="btn btn__red" type="submit">Отправить</button>
+        <button class="btn btn__red btn__modal" type="submit">Отправить</button>
       </form>
       <button type="button" class="close_window" id="btn_close">Закрыть</button>
   </section>
