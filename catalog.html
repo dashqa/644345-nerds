@@ -74,15 +74,15 @@
               <ul class="filter__radio-list">
                 <li class="filter__radio-item">
                   <input type="radio" name="radio-group" id="filter-adaptive" class="filter__input filter__input-radio" checked>
-                  <label for="filter-adaptive" class="filter__radio-label" tabindex="0">Адаптивная</label>
+                  <label for="filter-adaptive" class="filter__radio-label">Адаптивная</label>
                 </li>
                 <li class="filter__radio-item">
                   <input type="radio" name="radio-group" id="filter-fixed" class="filter__input filter__input-radio">
-                  <label for="filter-fixed" class="filter__radio-label" tabindex="0">Фиксированная</label>
+                  <label for="filter-fixed" class="filter__radio-label">Фиксированная</label>
                 </li>
                 <li class="filter__radio-item">
                   <input type="radio" name="radio-group" id="filter-reflowable" class="filter__input filter__input-radio">
-                  <label for="filter-reflowable" class="filter__radio-label" tabindex="0">Резиновая</label>
+                  <label for="filter-reflowable" class="filter__radio-label">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
@@ -91,23 +91,23 @@
               <ul class="filter__checkbox-list">
                 <li class="filter__checkbox-item">
                   <input type="checkbox" name="checkbox-group" id="filter-slider" class="filter__input filter__input-checkbox" checked>
-                  <label for="filter-slider" class="filter__checkbox-label" tabindex="0">Слайдер</label>
+                  <label for="filter-slider" class="filter__checkbox-label">Слайдер</label>
                 </li>
                 <li class="filter__checkbox-item">
                   <input type="checkbox" name="checkbox-group" id="filter-advantages" class="filter__input filter__input-checkbox">
-                  <label for="filter-advantages" class="filter__checkbox-label" tabindex="0">Блок преимуществ</label>
+                  <label for="filter-advantages" class="filter__checkbox-label">Блок преимуществ</label>
                 </li>
                 <li class="filter__checkbox-item">
                   <input type="checkbox" name="checkbox-group" id="filter-news" class="filter__input filter__input-checkbox" checked>
-                  <label for="filter-news" class="filter__checkbox-label" tabindex="0">Новости</label>
+                  <label for="filter-news" class="filter__checkbox-label">Новости</label>
                 </li>
                 <li class="filter__checkbox-item">
                   <input type="checkbox" name="checkbox-group" id="filter-gallery" class="filter__input filter__input-checkbox">
-                  <label for="filter-gallery" class="filter__checkbox-label" tabindex="0">Галерея</label>
+                  <label for="filter-gallery" class="filter__checkbox-label">Галерея</label>
                 </li>
                 <li class="filter__checkbox-item">
                   <input type="checkbox" name="checkbox-group" id="filter-cart" class="filter__input filter__input-checkbox">
-                  <label for="filter-cart" class="filter__checkbox-label" tabindex="0">Корзина</label>
+                  <label for="filter-cart" class="filter__checkbox-label">Корзина</label>
                 </li>
               </ul>
             </fieldset>
@@ -131,13 +131,13 @@
                 </li>
               </ul>
               <ul class="order__list">
-                <li class="order__item order__item-arrowdown current" tabindex="0">
-                  <a href="#" class="order__link">
+                <li class="order__item">
+                  <a href="#" class="order__link order__link-arrowdown current">
                     <span class="visually-hidden">По убыванию</span>
                   </a>
                 </li>
-                <li class="order__item order__item-arrowup" tabindex="0">
-                  <a href="#" class="order__link">
+                <li class="order__item">
+                  <a href="#" class="order__link order__link-arrowup">
                     <span class="visually-hidden">По возрастанию</span>
                   </a>
                 </li>
@@ -289,7 +289,29 @@
       </div>
     </div>
   </footer>
-  
+  <section class="feedback__modal" id="feedback__modal">
+      <!-- Hidden !-->
+        <strong class="feedback__subtitle">Напишите нам</strong>
+        <form action="https://echo.htmlacademy.ru" method="post" class="feedback__form">
+          <div class="contact__info">
+            <div class="feedback__form-box">
+          <label for="contact_name" class="feedback__label">Ваше имя:</label>
+          <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" autofocus>
+        </div>
+        <div class="feedback__form-box">
+          <label for="contact_email" class="feedback__label">Ваш e-mail:</label>
+          <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com">
+            </div>
+          </div>
+          <div class="feedback__form-box feedback__textarea-box">
+          <label for="contact_msg" class="feedback__label feedback__label-textarea">Текст письма: </label>
+          <textarea class="input__textarea" name="contact_msg" id="contact_msg" placeholder="В свободной форме">
+          </textarea>
+          </div>
+          <button class="btn btn__red btn__modal" type="submit">Отправить</button>
+        </form>
+        <button type="button" class="close_window" id="btn_close">Закрыть</button>
+    </section>
 </body>
 
 </html>
