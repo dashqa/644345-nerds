@@ -117,24 +117,24 @@
           <strong class="about-us__statistic-subtitle">C 2004 года любим точность во всем:</strong>
           <div class="about-us__statistic-list">
             <div class="about-us__statistic-item">
-              <p class="about-us__statistics-text-decoration">146
-                <sup class="about-us__statistics-sup">%</sup>
+              <p class="about-us__statistic-text-decoration">146
+                <sup class="about-us__statistic-sup">%</sup>
               </p>
-              <span class="about-us__statistics-span">Уровень
+              <span class="about-us__statistic-span">Уровень
                 <br> самоотдачи</span>
             </div>
             <div class="about-us__statistic-item">
-              <p class="about-us__statistics-text-decoration">100
-                <sup class="about-us__statistics-sup">%</sup>
+              <p class="about-us__statistic-text-decoration">100
+                <sup class="about-us__statistic-sup">%</sup>
               </p>
-              <span class="about-us__statistics-span">Соблюдение
+              <span class="about-us__statistic-span">Соблюдение
                 <br> сроков</span>
             </div>
             <div class="about-us__statistic-item">
-              <p class="about-us__statistics-text-decoration">50
-                <sup class="about-us__statistics-sup">%</sup>
+              <p class="about-us__statistic-text-decoration">50
+                <sup class="about-us__statistic-sup">%</sup>
               </p>
-              <span class="about-us__statistics-span">Минимальная
+              <span class="about-us__statistic-span">Минимальная
                 <br> предоплата</span>
             </div>
           </div>
@@ -232,25 +232,26 @@
   </footer>
   <section class="feedback__modal" id="feedback__modal">
     <!-- Hidden !-->
-      <strong class="feedback__subtitle">Напишите нам</strong>
-      <form action="https://echo.htmlacademy.ru" method="post" class="feedback__form">
-        <div class="contact__info">
-          <div class="feedback__form-box">
-        <label for="contact_name" class="feedback__label">Ваше имя:</label>
-        <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" autofocus>
-      </div>
-      <div class="feedback__form-box">
-        <label for="contact_email" class="feedback__label">Ваш e-mail:</label>
-        <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com">
-          </div>
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <strong class="feedback__subtitle">Напишите нам</strong>
+    <form action="https://echo.htmlacademy.ru" method="post" class="feedback__form">
+      <div class="contact__info">
+        <div class="feedback__form-box">
+          <label for="contact_name" class="feedback__label">Ваше имя:</label>
+          <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" autofocus>
         </div>
-        <div class="feedback__form-box feedback__textarea-box">
+        <div class="feedback__form-box">
+          <label for="contact_email" class="feedback__label">Ваш e-mail:</label>
+          <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com">
+        </div>
+      </div>
+      <div class="feedback__form-box feedback__textarea-box">
         <label for="contact_msg" class="feedback__label feedback__label-textarea">Текст письма: </label>
         <textarea class="input__textarea" name="contact_msg" id="contact_msg" placeholder="В свободной форме"></textarea>
-        </div>
-        <button class="btn btn__red btn__modal" type="submit">Отправить</button>
-      </form>
-      <button type="button" class="close_window" id="btn_close">Закрыть</button>
+      </div>
+      <button class="btn btn__red btn__modal" type="submit">Отправить</button>
+    </form>
+    <button type="button" class="close_window" id="btn_close">Закрыть</button>
   </section>
 </body>
 

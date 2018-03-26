@@ -145,8 +145,8 @@
             </form>
           </div>
           <div class="catalog__item-box">
-            <article class="catalog__item">
-              <img src="img/img-sedona.jpg" width="360" height="576" alt="Образец продукта Sedona" class="catalog__item-img" tabindex="0">
+            <article class="catalog__item" tabindex="0">
+              <img src="img/img-sedona.jpg" width="360" height="576" alt="Образец продукта Sedona" class="catalog__item-img">
               <!-- Hover !-->
               <div class="catalog__item-info">
                 <h3 class="catalog__item-subtitle">
@@ -157,8 +157,8 @@
                 <a href="#" class="btn btn__red btn__price"> 9 900 руб.</a>
               </div>
             </article>
-            <article class="catalog__item">
-              <img src="img/img-pink.jpg" width="360" height="576" alt="Образец продукта Pink App" class="catalog__item-img" tabindex="0">
+            <article class="catalog__item" tabindex="0">
+              <img src="img/img-pink.jpg" width="360" height="576" alt="Образец продукта Pink App" class="catalog__item-img">
               <!-- Hover !-->
               <div class="catalog__item-info">
                 <h3 class="catalog__item-subtitle">
@@ -169,8 +169,8 @@
                 <a href="#" class="btn btn__red btn__price"> 9 900 руб.</a>
               </div>
             </article>
-            <article class="catalog__item">
-              <img src="img/img-barbershop.jpg" width="360" height="576" alt="Образец продукта Barbershop" class="catalog__item-img" tabindex="0">
+            <article class="catalog__item" tabindex="0">
+              <img src="img/img-barbershop.jpg" width="360" height="576" alt="Образец продукта Barbershop" class="catalog__item-img">
               <!-- Hover !-->
               <div class="catalog__item-info">
                 <h3 class="catalog__item-subtitle">
@@ -181,8 +181,8 @@
                 <a href="#" class="btn btn__red btn__price"> 9 900 руб.</a>
               </div>
             </article>
-            <article class="catalog__item">
-              <img src="img/img-mishka.jpg" width="360" height="576" alt="Образец продукта Mishka" class="catalog__item-img" tabindex="0">
+            <article class="catalog__item" tabindex="0">
+              <img src="img/img-mishka.jpg" width="360" height="576" alt="Образец продукта Mishka" class="catalog__item-img">
               <!-- Hover !-->
               <div class="catalog__item-info">
                 <h3 class="catalog__item-subtitle">
@@ -193,8 +193,8 @@
                 <a href="#" class="btn btn__red btn__price"> 9 900 руб.</a>
               </div>
             </article>
-            <article class="catalog__item">
-              <img src="img/img-aplus.jpg" width="360" height="576" alt="Образец продукта A plus" class="catalog__item-img" tabindex="0">
+            <article class="catalog__item" tabindex="0">
+              <img src="img/img-aplus.jpg" width="360" height="576" alt="Образец продукта A plus" class="catalog__item-img">
               <!-- Hover !-->
               <div class="catalog__item-info">
                 <h3 class="catalog__item-subtitle">
@@ -205,8 +205,8 @@
                 <a href="#" class="btn btn__red btn__price"> 9 900 руб.</a>
               </div>
             </article>
-            <article class="catalog__item">
-              <img src="img/img-kvast.jpg" width="360" height="576" alt="Образец продукта Кваст" class="catalog__item-img" tabindex="0">
+            <article class="catalog__item" tabindex="0">
+              <img src="img/img-kvast.jpg" width="360" height="576" alt="Образец продукта Кваст" class="catalog__item-img">
               <!-- Hover !-->
               <div class="catalog__item-info">
                 <h3 class="catalog__item-subtitle">
@@ -291,26 +291,26 @@
   </footer>
   <section class="feedback__modal" id="feedback__modal">
       <!-- Hidden !-->
-        <strong class="feedback__subtitle">Напишите нам</strong>
-        <form action="https://echo.htmlacademy.ru" method="post" class="feedback__form">
-          <div class="contact__info">
-            <div class="feedback__form-box">
-          <label for="contact_name" class="feedback__label">Ваше имя:</label>
-          <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" autofocus>
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <strong class="feedback__subtitle">Напишите нам</strong>
+      <form action="https://echo.htmlacademy.ru" method="post" class="feedback__form">
+        <div class="contact__info">
+          <div class="feedback__form-box">
+            <label for="contact_name" class="feedback__label">Ваше имя:</label>
+            <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" autofocus>
+          </div>
+          <div class="feedback__form-box">
+            <label for="contact_email" class="feedback__label">Ваш e-mail:</label>
+            <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com">
+          </div>
         </div>
-        <div class="feedback__form-box">
-          <label for="contact_email" class="feedback__label">Ваш e-mail:</label>
-          <input type="email" name="contact_email" id="contact_email" class="input__contact-email" placeholder="email@example.com">
-            </div>
-          </div>
-          <div class="feedback__form-box feedback__textarea-box">
+        <div class="feedback__form-box feedback__textarea-box">
           <label for="contact_msg" class="feedback__label feedback__label-textarea">Текст письма: </label>
-          <textarea class="input__textarea" name="contact_msg" id="contact_msg" placeholder="В свободной форме">
-          </textarea>
-          </div>
-          <button class="btn btn__red btn__modal" type="submit">Отправить</button>
-        </form>
-        <button type="button" class="close_window" id="btn_close">Закрыть</button>
+          <textarea class="input__textarea" name="contact_msg" id="contact_msg" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="btn btn__red btn__modal" type="submit">Отправить</button>
+      </form>
+      <button type="button" class="close_window" id="btn_close">Закрыть</button>
     </section>
 </body>
 
