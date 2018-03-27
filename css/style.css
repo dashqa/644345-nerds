@@ -809,6 +809,7 @@ img {
 
 .filter__input[type="radio"],
 .filter__input[type="checkbox"] {
+  margin-right: -17px;
   opacity: 0;
 }
 
@@ -1008,7 +1009,7 @@ img {
 
 .catalog__item {
   position: relative;
-  margin-bottom: 27px;
+  margin-bottom: 35px;
   cursor: pointer;
 }
 
@@ -1020,7 +1021,7 @@ img {
 
 .catalog__item:hover >.catalog__item-info,
 .catalog__item:focus >.catalog__item-info {
-  display: block;
+  display: flex;
 }
 
 .catalog__item:hover::before,
@@ -1050,10 +1051,14 @@ img {
 .catalog__item-info {
   position: absolute;
   display: flex;
-  top: 385px;
-  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  top: 387px;
   width: 360px;
-  height: 231px;
+  max-height: 578px;
+  padding-bottom: 40px;
   text-align: center;
   background-color: #eeeeee;
 }
@@ -1065,12 +1070,11 @@ img {
 }
 
 .catalog__item-subtitle {
-  max-width: 360px;
-  max-height: 100px;
+  display: block;
   word-wrap: break-word;
 	overflow-wrap: break-word;
-  margin-bottom: 20px;
-  padding-top: 30px;
+  margin-bottom: 16px;
+  padding-top: 27px;
 }
 
 .catalog__item-text {
@@ -1364,7 +1368,7 @@ img {
 
 .social-network__call-caption {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
