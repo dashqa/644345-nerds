@@ -421,7 +421,7 @@ img {
 }
 
 .slider__text-decoration {
-  max-width: 365px;
+  max-width: 400px;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -532,12 +532,13 @@ img {
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
 }
 
 .about-us__statistic-item:last-child {
-  margin-right: 15px;
+  margin-right: 11px;
 }
 
 .about-us__statistic-subtitle {
@@ -549,8 +550,15 @@ img {
 
 .about-us__statistic-text-decoration {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
   font-size: 45px;
+}
+
+.about-us__statistic-text-decoration::after {
+  content: "\0025";
+  position: relative;
+  top: -0.7em;
+  font-size: 55%;
 }
 
 .about-us__statistic-span {
@@ -558,13 +566,7 @@ img {
   vertical-align: top;
   max-width: 110px;
   line-height: 18px;
-}
-
-.about-us__statistic-sup {
-  position: relative;
-  top: -0.7em;
-  left: -0.4em;
-  font-size: 55%;
+  word-wrap: break-word;
 }
 
 .partners__list {
@@ -1080,7 +1082,7 @@ img {
 
 .catalog__item:nth-child(1) .catalog__item-text,
 .catalog__item:nth-child(3) .catalog__item-text,
-.catalog__item:nth-child(4) .catalog__item-text{
+.catalog__item:nth-child(4) .catalog__item-text {
   padding: 0 20px;
 }
 
