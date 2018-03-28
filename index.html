@@ -8,7 +8,6 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
   <header class="page-header" id="page-header">
     <div class="wrapper">
@@ -53,10 +52,8 @@
             <a href="#" class="btn btn__red btn__slider">Узнать больше</a>
           </li>
           <li class="slider__item">
-            <h2 class="slider__info-caption">Любим математику
-              <br> как никто другой</h2>
-            <p class="slider__text-decoration">Никакого креатив, только математические формулы
-              <br> для расчета идеальных пропорций</p>
+            <h2 class="slider__info-caption">Любим математику как никто другой</h2>
+            <p class="slider__text-decoration">Никакого креатив, только математические формулы для расчета идеальных пропорций</p>
             <a href="#" class="btn btn__red btn__slider">Узнать больше</a>
           </li>
           <li class="slider__item">
@@ -163,8 +160,7 @@
     <div class="wrapper feedback">
       <div class="coordinates__form">
         <strong class="coordinates__subtitle">Nёrds Design Studio</strong>
-        <p class="coordinates__info">191186, Санкт-Петербург,
-          <br> ул. Б. Конюшенная, д. 19/8</p>
+        <p class="coordinates__info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p class="coordinates__text-decoration">тел. +7 (812) 275-75-75</p>
         <button type="button" class="btn btn__red btn__feedback">Напишите нам</button>
       </div>
@@ -227,7 +223,7 @@
       <div class="contact__info">
         <div class="feedback__form-box">
           <label for="contact_name" class="feedback__label">Ваше имя:</label>
-          <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия" autofocus>
+          <input type="text" name="contact_name" id="contact_name" class="input__contact-name" placeholder="Имя Фамилия">
         </div>
         <div class="feedback__form-box">
           <label for="contact_email" class="feedback__label">Ваш e-mail:</label>
@@ -242,7 +238,34 @@
     </form>
     <button type="button" class="close_window" id="btn_close">Закрыть</button>
   </section>
+  <script>
+    var btn = document.querySelector(".btn__feedback");
+   var popup = document.querySelector(".feedback__modal");
+  var close = popup.querySelector(".close_window");
+  
+  var form = popup.querySelector("form");
+  var name = popup.querySelector("[name=contact_name]");
+  var email = popup.querySelector("[contact_email]");
+  
+  btn.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+    name.focus();
+  });
+  
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+  });
+
+   window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+      }
+    }
+  });
+  </script>
 </body>
-
 </html>
-
