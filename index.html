@@ -6,7 +6,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="page-header" id="page-header">
@@ -238,34 +238,6 @@
     </form>
     <button type="button" class="close_window" id="btn_close">Закрыть</button>
   </section>
-  <script>
-    var btn = document.querySelector(".btn__feedback");
-   var popup = document.querySelector(".feedback__modal");
-  var close = popup.querySelector(".close_window");
-  
-  var form = popup.querySelector("form");
-  var name = popup.querySelector("[name=contact_name]");
-  var email = popup.querySelector("[contact_email]");
-  
-  btn.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-    name.focus();
-  });
-  
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-  });
-
-   window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-      }
-    }
-  });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
