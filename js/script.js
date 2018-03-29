@@ -3,14 +3,14 @@ var popup = document.querySelector(".feedback__modal");
 var close = popup.querySelector(".close_window");
 
 var form = popup.querySelector(".feedback__form");
-var name = popup.querySelector("[name=user_name]");
-var email = popup.querySelector("[name=user_email]");
-var msg = popup.querySelector("[name=user_msg]")
+var name = popup.querySelector(".input__contact-name");
+var email = popup.querySelector(".input__contact-email");
+var msg = popup.querySelector(".input__textarea")
 
 btn.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
-  name.focus();
+  contact_name.focus();
 });
 
 close.addEventListener("click", function (evt) {
@@ -25,6 +25,10 @@ form.addEventListener("submit", function (evt) {
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
+  }
+  else {
+    popUp.classList.remove("modal-show");
+    popUp.classList.remove("modal-error");
   }
 });
 
