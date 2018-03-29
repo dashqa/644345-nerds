@@ -1263,6 +1263,7 @@ img {
 }
 
 .coordinates {
+  position: relative;
   margin-bottom: 70px;
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
